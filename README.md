@@ -18,4 +18,6 @@ make
 
 ## References
 This project is made using [https://www.raylib.com/](Raylib)
-All songs are royality free tracks.
+Test Trace One is from [https://pixabay.com/users/lucafrancini-19914739/](lucafrancini)
+Test Trace two is from [https://pixabay.com/users/william_king-33448498/](william_king)
+Test Trace Three is from [https://pixabay.com/users/alisiabeats-39461785/](alisiabeats)
