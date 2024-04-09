@@ -7,6 +7,11 @@ This is a practice project to explore about Array and linklist datastructure.
 In this project an Array consist details about track or song and all tracks 
 are conected with the help of linklist.
 
+## Demo
+
+https://github.com/yahyakamran/tweply/assets/98393743/1d35cc5f-0b4d-4fc7-8445-71f1f9ae8b64
+
+
 ## Build
 For Linux
 ```console
