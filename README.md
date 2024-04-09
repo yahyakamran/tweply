@@ -18,6 +18,6 @@ make
 
 ## References
 This project is made using [raylib](https://www.raylib.com/)
-Test Trace One is from [lucafrancini](https://pixabay.com/users/lucafrancini-19914738/)
-Test Trace two is from [william_king](https://pixabay.com/users/william_king-33448498/)
-Test Trace Three is from [alisiabeats](https://pixabay.com/users/alisiabeats-39461785/)
+Test Track One is from [lucafrancini](https://pixabay.com/users/lucafrancini-19914738/)
+Test Track two is from [william_king](https://pixabay.com/users/william_king-33448498/)
+Test Track Three is from [alisiabeats](https://pixabay.com/users/alisiabeats-39461785/)
