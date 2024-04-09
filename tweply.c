@@ -59,9 +59,38 @@ int main(void){
             WindowShouldClose();
             return 0;
         }
+        if(IsKeyPressed(KEY_P)){
+            struct Node * PrevNode = NULL;
+            while (playlist) {
+                if(playlist->track->playing){
+                    if(PrevNode != NULL){
+                        playlist->track->playing = 0;
+                        PrevNode->track->playing = 1;
+                    }
+                }
+                PrevNode = playlist;
+                playlist=playlist->next;
+            }
+        }
+        if(IsKeyPressed(KEY_N)){
+        while (playlist) {
+            if (playlist->track->playing) {
+                playlist->track->playing = 0;
+                if(playlist->next != NULL){
+                    playlist = playlist->next;
+                }else {
+                    playlist = list;
+                }
+                playlist->track->playing = 1;
+                music = LoadMusicStream(playlist->track->name);
+                PlayMusicStream(music);
+            }
+            playlist = playlist->next;
+            }
+        }
         BeginDrawing();
         ClearBackground(DARKGRAY);
-        DrawText("Press q to quit",20, 5, 14, WHITE);
+        DrawText("Press q to quit - n/p to go forward/backward",20, 5, 14, WHITE);
         int pos = 40;
         while (playlist) {
             if (playlist->track->playing) {
