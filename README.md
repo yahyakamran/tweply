@@ -20,6 +20,13 @@ cd tweply
 make
 ./tweply
 ```
+## Controls
+| Operation        | Keys           | 
+| ------------- |:-------------:|
+| Play Next     | N  |
+| Play Prev      | P     | 
+| Pause/Play | SPACE    |
+| Quit | Q |
 
 ## References
 This project is made using [raylib](https://www.raylib.com/)
