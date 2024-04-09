@@ -63,13 +63,25 @@ int main(void){
             struct Node * PrevNode = NULL;
             while (playlist) {
                 if(playlist->track->playing){
+                    playlist->track->playing = 0;
                     if(PrevNode != NULL){
-                        playlist->track->playing = 0;
                         PrevNode->track->playing = 1;
+                        music = LoadMusicStream(PrevNode->track->name);
+                    }else {
+                        while (playlist) {
+                            if(playlist->next == NULL){
+                                playlist->track->playing = 1;
+                                music = LoadMusicStream(playlist->track->name);
+                            }
+                            playlist = playlist->next;
+                        }
                     }
+                    PlayMusicStream(music);
                 }
                 PrevNode = playlist;
-                playlist=playlist->next;
+                if(playlist != NULL){
+                    playlist=playlist->next;
+                }
             }
         }
         if(IsKeyPressed(KEY_N)){
